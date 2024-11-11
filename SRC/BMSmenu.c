@@ -5,6 +5,9 @@ char addaccount[12];
 int deposit;
 int withdraw;
 
+void Display();
+
+
 int main()
 {
     int number, balance = 0;
@@ -133,9 +136,18 @@ int main()
 
         default:
             printf("Invalid number. Please try again.\n");
+            Display();
             break;
         }
     } while (number != 5);
 
     return 0;
+}
+
+
+
+void Display()
+{
+
+    printf("This is Test Programs");
 }
